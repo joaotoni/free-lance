@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Header(){
     return(
-        <header className="flex justify-between items-baseline mt-3">
+        <header className="flex justify-around items-baseline pt-3">
             <nav>
                 <button>
                     <Image src="/assets/icons/menu.png" alt="" width={30} height={30}/>

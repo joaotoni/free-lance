@@ -1,10 +1,16 @@
+import Footer from "../components/foooter/footer";
 import Header from "../components/header/Header";
 
 
 export default function Home(){
     return(
-        <Header>
+        <div>
+            <Header>
 
-        </Header>
+            </Header>
+            <Footer>
+                
+            </Footer>
+        </div>
     )
 }

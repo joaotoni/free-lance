@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <footer>
             <section className="ml-[30px]">
-                <h3 className="font-[Montserrat] not-italic font-medium text-xl text-[#FFFFFF]">Meios de pagamento</h3>
+                <h3 className="font-[Montserrat] not-italic font-medium text-xl text-[#FFFFFF] mb-[6px]">Meios de pagamento</h3>
                 <div>
                     <Image src="/assets/icons/picpay.png" alt="" width={80} height={40}/>
                     <Image src="/assets/icons/pix.png" alt="" width={80} height={40}/>
@@ -16,10 +16,10 @@ export default function Footer(){
                     <Image src="/assets/icons/email.png" alt="" width={30} height={30}/>
                     <p className="text-[#FFFFFF]">aladofreefire7@gmail.com</p>
                 </div>
-                <div className="flex gap-[5px]">
-                    <Image src="/assets/icons/whats.png" alt="" width={30} height={30}/>
-                    <p className="text-[#FFFFFF]">+55 (88) 9 9419-2307</p>
-                </div>
+                    <button className="flex gap-[5px]">
+                        <Image src="/assets/icons/whats.png" alt="" width={30} height={30}/>
+                        <p className="text-[#FFFFFF]">+55 (88) 9 9419-2307</p>
+                    </button>
             </section>
             <section className="ml-[30px] mt-[20px]">
                 <h3 className="text-[#FFFFFF] mb-[6px] font-[Montserrat] not-italic font-medium text-xl">Siga o alado</h3>

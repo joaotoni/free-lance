@@ -36,26 +36,37 @@ export default function Home(){
                 </div>               
             </section>
             <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mt-[18px]"></hr>
-            <section className="flex justify-center">
-                <div className="text-center">
+            <section className="flex flex-wrap justify-center text-center w-fit">
                     <h1 className="text-[22px] text-azul_letras font-montserrat leading-[22px] font-bold mb-[19px] mt-[18px]">Lançamentos</h1>
-                    <div className="overflow-x-scroll scroll-smooth flex gap-6 w-full">
-                        <div className="bg-azul_fundo w-[320px] h-[428px] p-4 ">
-                            <Image src="/assets/imgs/image.png" alt="" width={288} height={270}/>
-                            <p className=" text-branco text-[15px] font-montserrat leading-[18px]">Calça angelical, top criminal azul,<br></br> 18 passes, etc.</p>
-                            <div className="flex justify-center pt-2">
-                                <p className="text-[#8E8E93] font-montserrat pr-[12px]">de: R$ 300,00</p>
-                                <p className="text-branco font-montserrat">por: R$ 200,00</p>
+                    <div className="overflow-x-scroll w-screen  ">
+                        <div className="flex gap-6 w-fit px-6">
+                            <div className="bg-azul_fundo w-[320px] h-[428px] p-4 ">
+                                <Image src="/assets/imgs/image.png" alt="" width={288} height={270}/>
+                                <p className=" text-branco text-[15px] font-montserrat leading-[18px]">Calça angelical, top criminal azul,<br></br> 18 passes, etc.</p>
+                                <div className="flex justify-center pt-2">
+                                    <p className="text-[#8E8E93] font-montserrat pr-[12px]">de: R$ 300,00</p>
+                                    <p className="text-branco font-montserrat">por: R$ 200,00</p>
+                                </div>
+                                <button className="border-azul_letras border px-2 py-1 bg-azul_letras rounded-full text-center mt-4">
+                                    <Image src="/assets/icons/carrinho.png" alt="" width={19} height={19}/>
+                                </button>
                             </div>
-                            <button className="border-azul_letras border px-2 py-1 bg-azul_letras rounded-full text-center mt-4">
-                                <Image src="/assets/icons/carrinho.png" alt="" width={19} height={19}/>
-                            </button>
+                            <div className="bg-azul_fundo w-[320px] h-[428px] p-4 ">
+                                <Image src="/assets/imgs/image.png" alt="" width={288} height={270}/>
+                                <p className=" text-branco text-[15px] font-montserrat leading-[18px]">Calça angelical, top criminal azul,<br></br> 18 passes, etc.</p>
+                                <div className="flex justify-center pt-2">
+                                    <p className="text-[#8E8E93] font-montserrat pr-[12px]">de: R$ 300,00</p>
+                                    <p className="text-branco font-montserrat">por: R$ 200,00</p>
+                                </div>
+                                <button className="border-azul_letras border px-2 py-1 bg-azul_letras rounded-full text-center mt-4">
+                                    <Image src="/assets/icons/carrinho.png" alt="" width={19} height={19}/>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <button className=" border border-azul_letras rounded-[40px] p-1 px-4 mt-4">
                         <p className="text-azul_letras font-montserrat">Ver todas</p>
                     </button>
-                </div>
             </section>
             <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mt-[18px] mb-[18px]"></hr>
             <Footer />   

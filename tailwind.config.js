@@ -3,7 +3,16 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}",
   "./components/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        azul_fundo:'rgba(25,182,229,0.5)',
+        azul_letras: '#19B6E5',
+        branco: '#FFFFFF'
+      },
+      fontFamily: {
+        montserrat: 'Montserrat'
+      },
+    },
   },
   plugins: [],
 }

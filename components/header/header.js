@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Header(){
     return(
@@ -9,9 +10,11 @@ export default function Header(){
                 </button>
             </nav>
             <nav>
-                <button>
-                    <Image src="/assets/icons/logo.png" alt="" width={115.4} height={54.08}/>
-                </button>
+                <Link href="/">
+                    <a>
+                        <Image src="/assets/icons/logo.png" alt="" width={115.4} height={54.08}/>
+                    </a>
+                </Link>
             </nav>
             <nav>
                 <button>

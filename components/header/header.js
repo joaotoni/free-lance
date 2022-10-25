@@ -3,12 +3,10 @@ import Link from "next/link"
 
 export default function Header(){
     return(
-        <header className="flex justify-around items-baseline pt-3">
-            <nav>
-                <button>
-                    <Image src="/assets/icons/menu.png" alt="" width={30} height={30}/>
-                </button>
-            </nav>
+        <header className="flex justify-center  items-baseline pt-3 relative">
+            <button className="absolute mr-[300px] mt-[20px]">
+                <Image src="/assets/icons/menu.png" alt="" width={30} height={30}/>
+            </button>
             <nav>
                 <Link href="/">
                     <a>
@@ -16,11 +14,7 @@ export default function Header(){
                     </a>
                 </Link>
             </nav>
-            <nav>
-                <button>
-                    <Image src="/assets/icons/perfil.png" alt="" width={30} height={30}/>
-                </button>
-            </nav>
+            
         </header>
     )
 }

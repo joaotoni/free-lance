@@ -52,6 +52,17 @@ export default function Home(){
                     </button>
             </section>
             <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mt-[18px] mb-[18px]"></hr>
+            <section className="flex justify-center mt-6 ">
+                <div className="bg-azul_fundo shadow-md rounded-[40px] text-center m-0 w-[240px] h-[170px] ">
+                    <h2 className="mt-[23px] mb-[6px] text-xl font-semibold font-montserrat text-branco leading-[27px]">Venda sua conta <br></br> com o Alado!</h2>
+                    <Link href="/catalago">
+                        <button className="mt-[36px] bg-azul_letras rounded-[40px] p-3">
+                            <p className="text-branco font-montserrat text-[15px] leading-[18px] font-semibold">Venda já!</p>
+                        </button>
+                    </Link>
+                </div>
+            </section>
+            <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mt-[18px] mb-[18px]"></hr>
             <Footer />   
         </main>
     )

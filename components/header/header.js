@@ -8,12 +8,10 @@ export default function Header(){
         setActive(!active)
     }
     return(
-        <header className="flex justify-center  items-baseline pt-3 relative">
-            <nav>
-                <div onClick={ToggleMode} className={`${false ?"" : "absolute mr-[300px] mt-[20px]"} bg-menu w-[50px] h-[50px] bg-cover`}>  
-                oi
-
-                </div>
+        <header className="flex justify-center items-center  pt-3 relative">
+            <nav className="absolute mr-[300px] mt-[20px]">
+                <button onClick={ToggleMode} className={`${active ?"" : ""} bg-menu w-[30px] h-[30px] bg-contain`}>  
+                </button>
             </nav> 
             <nav>
                 <Link href="/">
@@ -22,8 +20,8 @@ export default function Header(){
                     </a>
                 </Link>
             </nav>
-            {/* <div className={active ? "fixed w-full h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[50%] ease-in-out" : " fixed w-full h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[100%] ease-in-out"}>
-                <div className=" flex flex-col left-[1%] m-[45px] flex-nowrap text-branco">
+            <div className={`${active ? "w-[150px] h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[120%] ease-in-out" : "w-full h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[100%] ease-in-out"} flex fixed flex-col items-start `}>
+                <div className=" flex flex-col left-[1%] flex-nowrap text-azul_letras">
                     <Link href="/">
                         <a>Home</a>
                     </Link>
@@ -34,7 +32,7 @@ export default function Header(){
                         <a>Perfil</a>
                     </Link> 
                 </div>
-            </div> */}
+            </div>
         </header>
     )
 }

@@ -13,7 +13,7 @@ module.exports = {
         montserrat: 'Montserrat'
       },
       backgroundImage: {
-        'menu': "url('/public/assets/icons/menu.png')",
+        'menu': "url('/assets/icons/menu.png')",
       }
     },
   },

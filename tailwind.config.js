@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         montserrat: 'Montserrat'
       },
+      backgroundImage: {
+        'menu': "url('/public/assets/icons/menu.png')",
+      }
     },
   },
   plugins: [],

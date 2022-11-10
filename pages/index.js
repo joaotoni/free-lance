@@ -6,7 +6,7 @@ import Card from "../components/card/card";
 
 export default function Home(){
     return(
-        <main className="bg-[rgba(43,43,45,1)]">
+        <main className="bg-fundo">
             <Header />
             <section className="flex justify-center mt-6 ">
                 <div className="bg-azul_fundo shadow-md rounded-[40px] text-center m-0 w-[300px] h-[270px] ">

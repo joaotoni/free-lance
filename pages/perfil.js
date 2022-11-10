@@ -6,7 +6,7 @@ import Card_perfil from "../components/card/card_perfil";
 
 export default function Perfil(){
     return(
-        <main className="bg-[rgba(43,43,45,1)]">
+        <main className="bg-fundo">
             <Header />
             <section className="flex flex-wrap justify-center text-center mb-[60px] mt-[40px]">
                 <Card_perfil />

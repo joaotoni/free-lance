@@ -7,7 +7,8 @@ module.exports = {
       colors:{
         azul_fundo:'rgba(25,182,229,0.5)',
         azul_letras: '#19B6E5',
-        branco: '#FFFFFF'
+        branco: '#FFFFFF',
+        fundo: 'rgba(43,43,45,1)'
       },
       fontFamily: {
         montserrat: 'Montserrat'

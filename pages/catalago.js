@@ -7,7 +7,7 @@ import Card from "../components/card/card";
 
 export default function Catalago(){
     return(
-        <main className="bg-[rgba(43,43,45,1)]">
+        <main className="bg-fundo">
             <Header />
                <section className="flex flex-wrap justify-center text-center">
                 <Card />

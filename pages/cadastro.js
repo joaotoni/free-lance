@@ -4,9 +4,9 @@ export default function Cadastro(){
     return(
         <main>
             <Header />
-            <section>
+            <section className="text-center">
                 <h1>Cadastre aqui sua conta com o Alado!</h1>
-                <div>
+                <div className="flex flex-col p-4">
                     <label>Email:</label>
                     <input type="email" />
                     <label>Nome da conta:</label>
@@ -19,7 +19,7 @@ export default function Cadastro(){
                     <input type="text" />
                     <label>Level da sua conta</label>
                     <input type="text" />
-                    <label>Coloque um video mostrando o inventario da sua conta</label>
+                    <label>Coloque um video mostrando o inventario da sua conta:</label>
                     <input type="" />
                 </div>
             </section>

@@ -1,4 +1,6 @@
+import Footer from "../components/foooter/footer";
 import Header from "../components/header/Header";
+import { lista_texto, lista_check} from "../objects/list_of_cadastro";
 
 export default function Cadastro(){
     return(
@@ -7,22 +9,24 @@ export default function Cadastro(){
             <section className="text-center p-4">
                 <h1 className="text-azul_letras">Cadastre aqui sua conta com o Alado!</h1>
                 <for className="flex flex-col p-4 text-branco">
-                    <label className="pb-2">Email:</label>
-                    <input type="email" />
-                    <label className="pb-2">Nome da conta:</label>
-                    <input type="text" />
-                    <label className="pb-2">Nome:</label>
-                    <input type="text" />
-                    <label className="pb-2">Nome das suas Skins:</label>
-                    <input type="text" />
-                    <label className="pb-2">Rank da sua conta:</label>
-                    <input type="text" />
-                    <label className="pb-2">Level da sua conta</label>
-                    <input type="text" />
+                    {lista_texto.map((element, index)=> (
+                        <div className="pb-2 flex flex-col" key={element.text +index}>
+                            <label >{element.text}</label>
+                            <input className="rounded-lg" type="text" />
+                        </div>
+                    ))}   
+                     {lista_check.map((element, index)=> (
+                        <div className="flex justify-evenly" key={element.check +index}>
+                            <label className="">{element.check}</label>
+                            <input type="checkbox" />
+                        </div>
+                    ))}   
                     <label className="pb-2">Coloque um video mostrando o inventario da sua conta:</label>
                     <input type="file"name="file" formAction="mp4" />
-                </for>
+                </for>   
             </section>
+            <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mt-[10px] mb-[18px]"></hr>
+            <Footer />
         </main>
     )
 }

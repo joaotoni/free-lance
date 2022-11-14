@@ -20,7 +20,7 @@ export default function Header(){
                     </a>
                 </Link>
             </nav>
-            <div className={`${active ? "w-[150px] h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[120%] ease-in-out" : "w-full h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[100%] ease-in-out"} flex fixed flex-col items-start `}>
+            <nav className={`${active ? "w-[150px] h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[120%] ease-in-out" : "w-full h-[100vh] bg-[rgba(43,43,45,1)] translate-x-[100%] ease-in-out"} flex fixed flex-col items-start `}>
                 <div className=" flex flex-col left-[1%] flex-nowrap text-azul_letras">
                     <Link href="/">
                         <a>Home</a>
@@ -32,7 +32,7 @@ export default function Header(){
                         <a>Perfil</a>
                     </Link> 
                 </div>
-            </div>
+            </nav>
         </header>
     )
 }

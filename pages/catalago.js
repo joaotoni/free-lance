@@ -1,8 +1,5 @@
 import Header from "../components/header/header"
 import Footer from "../components/foooter/footer"
-import Image from "next/image"
-import { List_of_perfil } from "../objects/list_of_perfil";
-import Link from "next/link"
 import Card from "../components/card/card";
 
 export default function Catalago(){

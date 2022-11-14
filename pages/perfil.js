@@ -1,7 +1,5 @@
 import Footer from "../components/foooter/footer";
 import Header from "../components/header/Header";
-import Image from "next/image"
-import { List_of_perfil } from "../objects/list_of_perfil";
 import Card_perfil from "../components/card/card_perfil";
 
 export default function Perfil(){

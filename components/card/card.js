@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Card(){
     return(
-        <section>
+        <>
             {List_of_perfil.map((element, index)=>(
                 <>
                     <div className="bg-azul_fundo w-[320px] h-[428px] p-4 mb-[18px] " key={element.description +index}>
@@ -20,7 +20,7 @@ export default function Card(){
                             </a>
                         </Link>
                     </div>
-                    <div className="bg-azul_fundo w-[320px] h-[428px] p-4 mb-[18px] " key={element.description +index}>
+                    <div className="bg-azul_fundo w-[320px] h-[428px] p-4 mb-[18px] ">
                         <Image src={element.img} alt="" width={288} height={270}/>
                         <p className=" text-branco text-[15px] font-montserrat leading-[18px]">{element.description}</p>
                         <div className="flex justify-center pt-2 mb-4">
@@ -35,6 +35,6 @@ export default function Card(){
                     </div>
                 </>
             ))}
-        </section>
+        </>
     )
 }

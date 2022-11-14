@@ -1,4 +1,4 @@
-import Footer from "../components/foooter/footer";
+import Footer from "../components/footer/footer";
 import Header from "../components/header/Header";
 import { lista_texto, lista_check} from "../objects/list_of_cadastro";
 
@@ -8,7 +8,7 @@ export default function Cadastro(){
             <Header />
             <section className="text-center p-4">
                 <h1 className="text-azul_letras">Cadastre aqui sua conta com o Alado!</h1>
-                <for className="flex flex-col p-4 text-branco">
+                <for className="flex flex-col p-4 text-branco bg-azul_fundo rounded-lg">
                     {lista_texto.map((element, index)=> (
                         <div className="pb-2 flex flex-col" key={element.text +index}>
                             <label >{element.text}</label>

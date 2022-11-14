@@ -1,5 +1,5 @@
 import Header from "../components/header/header"
-import Footer from "../components/foooter/footer"
+import Footer from "../components/footer/footer"
 import Card from "../components/card/card";
 
 export default function Catalago(){

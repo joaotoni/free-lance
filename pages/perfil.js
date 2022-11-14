@@ -1,4 +1,4 @@
-import Footer from "../components/foooter/footer";
+import Footer from "../components/footer/footer";
 import Header from "../components/header/Header";
 import Card_perfil from "../components/card/card_perfil";
 

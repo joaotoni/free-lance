@@ -17,14 +17,32 @@ export default function Catalago({numberOfCards, page}){
                         disabled={page <= 1}>
                         <p className="text-azul_letras">Anterior</p>
                     </button>
-                    <p className="text-azul_letras">2/10</p>
+                    <a className="text-azul_letras">2/10</a>
                     <button className="border border-azul_letras rounded-[40px] p-1 px-4" onClick={() => router.push(`/catalago?page=${page + 1}`)}
                         disabled={page >= lastPage}>
-                        <p className="text-azul_letras">Próxima</p>
+                        <a className="text-azul_letras">Próxima</a>
                     </button>
                </section>
                <hr className="bg-azul_letras border-[1px] border-solid border-azul_letras mb-[18px]"></hr>
             <Footer />
         </main>
     )
+}
+export async function getServerSideProps({ query: {page= 1} }) {
+    const { API_URL } = process.env
+
+    const start = +page === 1 ? 0 : (+page - 1) * 3
+
+    const numberOfCardsResponse = await fetch(`${API_URL}/movies/count`)
+    const numberOfCards = await numberOfCardsResponse.json()
+
+    const res = await fetch(`${API_URL}/movies?_limit=3&_start=${start}`)
+    const data = await res.json()
+    return {
+        props: {
+            movies: data,
+            page: +page,
+            numberOfCards
+        }
+    }
 }
